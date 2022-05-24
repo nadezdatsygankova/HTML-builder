@@ -27,7 +27,6 @@ fs.readdir(pathFile,
                 fs.readFile(pathsToCheck, "utf8",
                   function (error, data) {
                     if (error) throw error;
-                    console.log(data);
                     let pathBundle = path.join('05-merge-styles','project-dist','bundle.css')
                     fs.appendFile(pathBundle,  data,function (error, data) {
                       if (error) throw error;
